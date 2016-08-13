@@ -83,7 +83,7 @@ header.masthead h1, header.masthead h2, header.masthead h3 {
   -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-  background: white;
+  background: #20bbfc;
   min-height: 70px;
 }
 #nav.affix {
@@ -121,14 +121,14 @@ header.masthead h1, header.masthead h2, header.masthead h3 {
   padding-bottom: 24px;
   font-family: "Open Sans", Tahoma, Arial;
   font-weight: bold;
-  color: #222222;
+  color: #eeeeee;
   -webkit-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
 #nav .navbar-nav li a:hover {
-  color: #22a3df;
+  color: #222222;
   background: none;
 }
 #nav .navbar-nav li.social-nav {
@@ -144,7 +144,7 @@ header.masthead h1, header.masthead h2, header.masthead h3 {
   font-size: 1.33333333em;
 }
 #nav .navbar-nav li.active a {
-  color: #22a3df;
+  color: #222222;
 }
 
 section#whoWeAre {
@@ -927,7 +927,7 @@ section.well .breadcrumb .active {
 
 footer#site-footer {
   padding: 40px 0;
-  background: #222222;
+  background: #20bbfc;
   color: white;
   text-align: center;
 }
