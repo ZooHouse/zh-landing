@@ -1,7 +1,5 @@
-/node_modules
-/bower_components
-/Bondy
-/Bondy.zip
+node_modules
+app/css/dist
 .sass-cache
 
 *.DS_Store
