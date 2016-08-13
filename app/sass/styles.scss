@@ -1,7 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400,600,700);
+@font-face {
+	font-family: 'Avenir Heavy';
+	src: url('../fonts/avenir-heavy-webfont.eot');
+	src: url('../fonts/avenir-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/avenir-heavy-webfont.woff') format('woff'),
+	     url('../fonts/avenir-heavy-webfont.ttf') format('truetype'),
+	     url('../fonts/avenir-heavy-webfont.svg#avenir_85_heavyregular') format('svg');
+}
 
 //Colors
-$brand-primary : 		#22a3df;
+$brand-primary : 		#20bbfc;
 $brand-primary-light : 	lighten($brand-primary, 20%);
 $brand-primary-dark : 	darken($brand-primary, 20%);
 $brand-success:         #5cb85c;
@@ -163,7 +171,7 @@ $borderDark : 1px solid $gray-dark;
   background-size: cover;
 }
 
-// my mixins for this template 
+// my mixins for this template
 
 
 // styling starts from here
@@ -174,7 +182,7 @@ body{
 
 header {
 	background: $gray-darker;
-	color:$black-color;
+	color:$white-color;
 	&.masthead{
 		.bannercontainer {
 			width:100%;
@@ -187,8 +195,9 @@ header {
 		}
 		h1{
 			text-transform: uppercase;
-			font-size: 55px;
+			font-size: 26px;
 			font-weight: bold;
+			font-family: 'Avenir Heavy';
 		}
 		.tp-bannertimer{
 			background:url('../rs-plugin/assets/timerdot2.png');
@@ -200,7 +209,7 @@ header {
 				color: $white-color;
 				&:hover{
 					color:$gray-lighter;
-				}	
+				}
 			}
 			&.italic{
 				font-style: italic;
@@ -244,7 +253,7 @@ header {
 	top:-32px;
 	margin-bottom: 0;
 	@include box-shadow($shadow : 0 0 3px rgba(0,0,0,.2));
-	background:$white-color;
+	background:$brand-primary;
 	min-height:70px;
 
 	&.affix {
@@ -281,10 +290,10 @@ header {
 				padding-bottom: 24px;
 				font-family: $font-stack;
 				font-weight: bold;
-				color: $gray-darker;
+				color: $white-color;
 				@include transition;
 				&:hover{
-					color: $brand-primary;
+					color: $gray-darker;
 					background:none;
 				}
 			}
@@ -302,7 +311,7 @@ header {
 			}
 			&.active{
 				a{
-					color: $brand-primary;
+					color: $gray-darker;
 				}
 			}
 		}
@@ -798,7 +807,7 @@ section{
     			float: none;
     			margin: 40px 0;
     		}
-    		h3{			
+    		h3{
 				a{
 					color:$gray-dark;
 					&:hover{
@@ -942,7 +951,7 @@ section{
     	}
     	.pagination-wrapper{
     		text-align: center;
-    		.pagination>li>a, .pagination>li>span{				
+    		.pagination>li>a, .pagination>li>span{
     			color:$brand-primary;
     		}
     		.pagination>.active>a,
@@ -1068,7 +1077,7 @@ section.well{
 
 footer#site-footer{
 	padding: 40px 0;
-	background:$gray-darker;
+	background:$brand-primary;
 	color:$white-color;
 	text-align: center;
 	span.divider{
@@ -1419,10 +1428,10 @@ a{
 	margin-bottom: 16px;
 	overflow: hidden;
 }
- 
+
 .flex-video.widescreen { padding-bottom: 57.25%; }
 .flex-video.vimeo { padding-top: 0; }
- 
+
 .flex-video iframe,
 .flex-video object,
 .flex-video embed {
@@ -1446,7 +1455,7 @@ a{
 	margin-bottom: 15px;
 }
 
-// outline zero on focus 
+// outline zero on focus
 :focus {outline: 0;}
 
 canvas{
