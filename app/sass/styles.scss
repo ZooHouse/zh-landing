@@ -1,4 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400,600,700);
+@font-face {
+	font-family: 'Avenir Heavy';
+	src: url('../fonts/avenir-heavy-webfont.eot');
+	src: url('../fonts/avenir-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/avenir-heavy-webfont.woff') format('woff'),
+	     url('../fonts/avenir-heavy-webfont.ttf') format('truetype'),
+	     url('../fonts/avenir-heavy-webfont.svg#avenir_85_heavyregular') format('svg');
+}
 
 //Colors
 $brand-primary : 		#20bbfc;
@@ -187,8 +195,9 @@ header {
 		}
 		h1{
 			text-transform: uppercase;
-			font-size: 55px;
+			font-size: 26px;
 			font-weight: bold;
+			font-family: 'Avenir Heavy';
 		}
 		.tp-bannertimer{
 			background:url('../rs-plugin/assets/timerdot2.png');
@@ -226,7 +235,6 @@ header {
 		}
 		h1,h2,h3{
 			color: $white-color;
-			font-size: 26px;
 		}
 	}
 }
