@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 					style: 'expanded'
 				},
 				files: {
-					'app/css/styles.css': 'app/sass/styles.scss'
+					'app/css/dist/styles.css': 'app/sass/styles.scss'
 				}
 			}
 		},
@@ -74,7 +74,7 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	
+
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-newer');
 	grunt.loadNpmTasks('grunt-shell');
@@ -82,7 +82,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-ftp-deploy');
 	grunt.loadNpmTasks('grunt-bumpup');
 
-	grunt.task.registerTask('default', ['connect','watch']);
+	grunt.task.registerTask('default', ['sass', 'connect', 'watch']);
 	grunt.task.registerTask('git', ['bumpup:patch','shell:git_add','shell:git_commit','shell:git_push']);
 	grunt.task.registerTask('ftp', ['ftp-deploy']);
 	grunt.task.registerTask('goodbye', ['shell:shutdown']);
