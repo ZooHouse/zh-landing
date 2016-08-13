@@ -63,7 +63,7 @@ var appMaster = {
     revSlider: function(){
 
         var docHeight = $(window).height();
-        
+
         var revapi;
         revapi = jQuery('.tp-banner').revolution(
         {
@@ -114,14 +114,14 @@ var appMaster = {
             var mapOptions = {
                 zoom: 13,
                 draggable: false,
-                zoomControl: true, 
+                zoomControl: true,
                 scrollwheel:false,
                 streetViewControl:false,
 
                 // The latitude and longitude to center the map (always required)
                 center: new google.maps.LatLng(40.869108,-73.892609), // New York
 
-                // How you would like to style the map. 
+                // How you would like to style the map.
                 // This is where you would paste any style found on Snazzy Maps.
                 styles: [
                     {
@@ -243,7 +243,7 @@ var appMaster = {
                 ]
             };
 
-            // Get the HTML DOM element that will contain your map 
+            // Get the HTML DOM element that will contain your map
             // We are using a div with id="map" seen below in the <body>
             var mapElement = document.getElementById('map');
 
@@ -299,7 +299,7 @@ var appMaster = {
 
     canvasHack: function(){
         // so non-IE won't freak out in canvasInit
-        var G_vmlCanvasManager; 
+        var G_vmlCanvasManager;
 
         function canvasInit() {
             var cv = document.createElement('canvas');
@@ -313,59 +313,11 @@ var appMaster = {
         }
     },
 
-    ThemeSwitcher: function(){
-        $('.Switcher').on('click', function(){
-            $('.theme-switcher .colors').toggle('fast');
-            $(this).toggleClass('active');
-        });
-
-
-        var blueConfig = function(){
-            $('link[title=mainStyle]').attr('href', 'css/styles-blue.css');
-            $('.navbar-brand img').attr('src','img/logo-blue.png');
-            $('img.ipad-image').attr('src','img/samples/ipad-bl.png');
-            $('img.macbook-image').attr('src','img/samples/macbook-bl.png');
-        }
-        var orangeConfig = function(){
-            $('link[title=mainStyle]').attr('href', 'css/styles-orange.css');
-            $('.navbar-brand img').attr('src','img/logo-orange.png');
-            $('img.ipad-image').attr('src','img/samples/ipad-bl.png');
-            $('img.macbook-image').attr('src','img/samples/macbook-bl.png');
-        }
-        var redConfig = function(){
-            $('link[title=mainStyle]').attr('href', 'css/styles-red.css');
-            $('.navbar-brand img').attr('src','img/logo-red.png');
-            $('img.ipad-image').attr('src','img/samples/ipad-rd.png');
-            $('img.macbook-image').attr('src','img/samples/macbook-rd.png');
-        }
-
-        
-
-        $('.theme-switcher .colors a').on('click', function(){
-
-            var ThisColor = $(this).attr('class');
-
-            switch(ThisColor){
-                case 'blue':
-                    blueConfig();
-                    break;
-                case 'orange':
-                    orangeConfig();
-                    break;
-                case 'red':
-                    redConfig();
-                    break;
-            }
-
-        });
-    }
-
 };
 
 
 $(document).ready(function() {
 
     appMaster.scollToTop();
-    appMaster.ThemeSwitcher();
 
 });
