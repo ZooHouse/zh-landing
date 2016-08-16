@@ -31,9 +31,18 @@ module.exports = function(grunt) {
 					livereload:true
 				}
 			}
+		},
+		git_deploy: {
+			main: {
+				options: {
+					url: 'git@github.com:ZooHouse/zh-landing.git'
+				},
+				src: 'app'
+			},
 		}
 	});
 
+	grunt.loadNpmTasks('grunt-git-deploy');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
