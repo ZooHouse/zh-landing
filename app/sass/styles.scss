@@ -291,8 +291,7 @@ header {
 section {
 	&#mission {
 		@include box-shadow($shadow : 0px 1px 3px rgba(0,0,0,.2));
-		padding: 30vh 0;
-		height: 100vh;
+		padding: 6vh 0;
 		.media .media-body h4 {
 			font-weight: bold;
 		}
