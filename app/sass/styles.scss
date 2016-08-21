@@ -290,9 +290,7 @@ header {
 }
 section {
 	&#mission {
-		@include box-shadow($shadow : 0px 1px 3px rgba(0,0,0,.2));
-		padding: 30vh 0;
-		height: 100vh;
+		padding: 6vh 0;
 		.media .media-body h4 {
 			font-weight: bold;
 		}
@@ -318,6 +316,7 @@ section {
 	}
 	&#testimonials {
 		padding: 40px 0;
+		background: $brand-primary;
 		#testimonials-carousel {
 			margin: 30px 0;
 			.item {
@@ -325,14 +324,15 @@ section {
 				p {
 					padding: 0 50px;
 					text-align: center;
+					color: $white-color;
 					font-size: 16px;
 				}
 				.author {
 					position: relative;
-					color: $gray-light;
+					color: $white-color;
 					h5 {
 						text-transform: uppercase;
-						color: darken($gray-light, 5%);
+						color: $white-color;
 						margin-bottom: 1px;
 					}
 					p {
@@ -345,14 +345,16 @@ section {
 						position: absolute;
 						top: -10px;
 						left: -40px;
-						color: lighten($gray-light, 20%);
+						color: $white-color;
 					}
 				}
 			}
 			.carousel-control {
 				background: none;
 				width: 30px;
-				color: lighten($gray-light, 15%);
+				color: $white-color;
+				opacity: 1;
+				text-shadow: none;
 			}
 		}
 	}
@@ -407,10 +409,6 @@ section {
 					color: $brand-primary;
 				}
 			}
-		}
-		span.divider {
-			margin: 40px 0;
-			display: block;
 		}
 		h4 {
 			text-transform: uppercase;
@@ -502,9 +500,6 @@ footer#site-footer {
 	background: $brand-primary;
 	color: $white-color;
 	text-align: center;
-	span.divider {
-		float: none;
-	}
 	h4,
 	h5 {
 		text-transform: uppercase;
@@ -628,10 +623,6 @@ footer#site-footer {
 	i {
 		color: lighten($gray-light, 25%);
 	}
-	span.divider {
-		margin: 20px auto;
-		float: none;
-	}
 	&.white {
 		color: $white-color;
 	}
@@ -639,30 +630,6 @@ footer#site-footer {
 span.brandy {
 	color: $brand-primary;
 	text-transform: lowercase;
-}
-span.divider {
-	height: 10px;
-	background: $brand-primary;
-	border-left: 15px solid $black-color;
-	display: block;
-	margin: 20px auto;
-	width: 30px;
-	position: relative;
-	&:before {
-		position: absolute;
-		content: ' ';
-		top: 0;
-		left: -1px;
-		width: 1px;
-		height: 10px;
-		background: #FFF;
-	}
-	&.grey {
-		border-color: $gray-light;
-		&:before {
-			background: $gray-darker;
-		}
-	}
 }
 ul {
 	list-style-image: url("../img/bullet-bl.png");
