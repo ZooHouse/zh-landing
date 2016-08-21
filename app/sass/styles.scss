@@ -24,7 +24,7 @@ $gray-lighter: lighten(#000, 93.5%); // #eee
 $white-color: #FFFFFF;
 $black-color: #000000;
 //Font Styling & Sizing
-$font-stack: 'Open Sans', Tahoma, Arial;
+$font-stack: 'Avenir Heavy', 'Open Sans', Tahoma, Arial;
 $font-size-base: 14px; //Important To Be 14px For FontAwesome Rendering
 $font-size-large: ceil(($font-size-base * 1.25)); // ~18px
 $font-size-xlarge: ceil(($font-size-base * 1.79)); // ~25px
@@ -142,6 +142,15 @@ $borderDark: 1px solid $gray-dark;
 	-o-background-size: cover;
 	background-size: cover;
 }
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
 // my mixins for this template
 // styling starts from here
 body {
@@ -207,6 +216,16 @@ header {
 		}
 	}
 }
+.video-overlay {
+	background: rgba(0,0,0,0);
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column
+}
+
 #wrap {
 	padding-top: 70px;
 	&.home {
@@ -295,27 +314,19 @@ section {
 			font-weight: bold;
 		}
 	}
+	&#how-we-roll {
+		padding: 30vh 0;
+		height: 100vh;
+	}
 	&#about {
-		padding: 40px 0;
+		padding: 30vh 0;
+		height: 100vh;
 		img {
 			margin: 15px auto;
 		}
-		.media {
-			margin-top: 20px;
-			.media-body {
-				.media-heading {
-					font-weight: bold;
-					margin-top: 20px;
-					font-size: 16px;
-				}
-				p {
-					margin-top: 20px;
-				}
-			}
-		}
 	}
 	&#testimonials {
-		padding: 40px 0;
+		padding: 20vh 0;
 		background: $brand-primary;
 		#testimonials-carousel {
 			margin: 30px 0;

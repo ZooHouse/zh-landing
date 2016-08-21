@@ -7,3 +7,7 @@
 ## deploying
 
 ```grunt git_deploy```
+
+## Resources
+
+[Overlaying stuff on video](http://codepen.io/icutpeople/pen/whueK)
