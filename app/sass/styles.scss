@@ -408,10 +408,6 @@ section {
 				}
 			}
 		}
-		span.divider {
-			margin: 40px 0;
-			display: block;
-		}
 		h4 {
 			text-transform: uppercase;
 			margin-bottom: 25px;
@@ -502,9 +498,6 @@ footer#site-footer {
 	background: $brand-primary;
 	color: $white-color;
 	text-align: center;
-	span.divider {
-		float: none;
-	}
 	h4,
 	h5 {
 		text-transform: uppercase;
@@ -628,10 +621,6 @@ footer#site-footer {
 	i {
 		color: lighten($gray-light, 25%);
 	}
-	span.divider {
-		margin: 20px auto;
-		float: none;
-	}
 	&.white {
 		color: $white-color;
 	}
@@ -639,30 +628,6 @@ footer#site-footer {
 span.brandy {
 	color: $brand-primary;
 	text-transform: lowercase;
-}
-span.divider {
-	height: 10px;
-	background: $brand-primary;
-	border-left: 15px solid $black-color;
-	display: block;
-	margin: 20px auto;
-	width: 30px;
-	position: relative;
-	&:before {
-		position: absolute;
-		content: ' ';
-		top: 0;
-		left: -1px;
-		width: 1px;
-		height: 10px;
-		background: #FFF;
-	}
-	&.grey {
-		border-color: $gray-light;
-		&:before {
-			background: $gray-darker;
-		}
-	}
 }
 ul {
 	list-style-image: url("../img/bullet-bl.png");
