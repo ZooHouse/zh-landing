@@ -1,282 +1,287 @@
 <!doctype html>
-<!--[if lt IE 7]><html lang="en" class="no-js ie6"><![endif]-->
-<!--[if IE 7]><html lang="en" class="no-js ie7"><![endif]-->
-<!--[if IE 8]><html lang="en" class="no-js ie8"><![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en" class="no-js">
-<!--<![endif]-->
-
-<head>
-    <meta charset="UTF-8">
-    <title>Zoo House</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link rel="shortcut icon" href="favicon.ico">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/jquery.easy-pie-chart.css">
-    <link rel="stylesheet" href="css/dist/styles.css" title="mainStyle">
-
-    <!-- REVOLUTION BANNER CSS SETTINGS -->
-    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
-
-    <script src="js/modernizr.custom.32033.js"></script>
-
-    <!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<!--[if lt IE 7]>
+<html lang="en" class="no-js ie6">
+  <![endif]-->
+  <!--[if IE 7]>
+  <html lang="en" class="no-js ie7">
     <![endif]-->
-
-</head>
-
-<body>
-
-    <div class="pre-loader">
-        <div class="load-con">
-            <img src="img/logo.png" class="animated fadeInDown" alt="" style="height:200px;width:200px">
-            <div class="spinner">
+    <!--[if IE 8]>
+    <html lang="en" class="no-js ie8">
+      <![endif]-->
+      <!--[if gt IE 8]><!-->
+      <html lang="en" class="no-js">
+        <!--<![endif]-->
+        <head>
+          <meta charset="UTF-8">
+          <title>Zoo House</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+          <link rel="shortcut icon" href="favicon.ico">
+          <link rel="stylesheet" href="css/bootstrap.min.css">
+          <link rel="stylesheet" href="css/animate.css">
+          <link rel="stylesheet" href="css/font-awesome.min.css">
+          <link rel="stylesheet" href="css/jquery.easy-pie-chart.css">
+          <link rel="stylesheet" href="css/dist/styles.css" title="mainStyle">
+          <!-- REVOLUTION BANNER CSS SETTINGS -->
+          <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+          <script src="js/modernizr.custom.32033.js"></script>
+          <!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
+          <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+          <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+          <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+          <![endif]-->
+        </head>
+        <body>
+          <div class="pre-loader">
+            <div class="load-con">
+              <img src="img/logo.png" class="animated fadeInDown" alt="" style="height:200px;width:200px">
+              <div class="spinner">
                 <div class="bounce1"></div>
                 <div class="bounce2"></div>
                 <div class="bounce3"></div>
+              </div>
             </div>
-        </div>
-    </div>
-    <div class="go-down">
-        <a href="#whoWeAre">
+          </div>
+          <div class="go-down">
+            <a href="#mission">
             <i class="fa fa-angle-down fa-3x"></i>
-        </a>
-    </div>
-    <!-- Wrap all page content here -->
-    <div id="wrap" class="home">
-        <header class="masthead">
-            <div class="video-background">
-              <video autoplay style="width:100%" onclick="this.paused ? this.play() : this.pause();">
-                <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" />
-              </video>
-            </div>
-
-            <!-- Fixed navbar -->
-            <div class="navbar navbar-static-top" id="nav" role="navigation">
+            </a>
+          </div>
+          <!-- Wrap all page content here -->
+          <div id="wrap" class="home">
+            <header class="masthead">
+              <div class="video-background" style="position: relative;">
+                <video autoplay style="height: auto;vertical-align: middle;width: 100%;" onclick="this.paused ? this.play() : this.pause();" onloadstart="this.volume=0;">
+                  <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" />
+                </video>
+                <div class="video-overlay">
+                  <img src="img/banner_logo.png" width="50%"/>
+                  <h2>We build awesome products with awesome people.</h2>
+                </div>
+              </div>
+              <!-- Fixed navbar -->
+              <div class="navbar navbar-static-top" id="nav" role="navigation">
                 <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <i class="fa fa-align-justify"></i>
-                        </button>
-                        <a class="navbar-brand" href="#">
-                            <h1>Zoo House</h1>
-                        </a>
-                    </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#mission">mission</a></li>
-                            <li><a href="#about">what we do</a></li>
-                            <li><a href="#contact">contact</a></li>
-                            <li class="social-nav visible-lg">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-align-justify"></i>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                      <h1>Zoo House</h1>
+                    </a>
+                  </div>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="active"><a href="#how-we-roll">How We Roll</a></li>
+                      <li><a href="#about">what we do</a></li>
+                      <li><a href="#contact">contact</a></li>
+                      <li class="social-nav visible-lg">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.navbar-collapse -->
                 </div>
                 <!--/.container -->
-            </div>
-            <!--/.navbar -->
-
-        </header>
-
-        <section id="mission">
-            <div class="container">
+              </div>
+              <!--/.navbar -->
+            </header>
+            <section id="how-we-roll">
+              <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-push-2 clearfix">
-                        <div class="section-heading scrollpoint sp-effect3">
-                            <h1>.we are bond<span>y</span>
-                            </h1>
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore reiciendis vel reprehenderit expedita cupiditate repellat debitis! Est qui quae consectetur temporibus a illum deleniti? Quae, adipisci praesentium quis omnis dignissimos!</h4>
+                  <div class="col-md-8 col-md-push-2 clearfix">
+                    <div class="section-heading scrollpoint sp-effect3">
+                      <h1>How we roll.</span>
+                      </h1>
+                      <h4>
+                        We are a team of dedicated makers who are passionate about bringing elegant design and innovative technologies to the world. Our mission is simple. We believe that everyone from a local shop owner to an individual with a disruptive idea should get a fair shake in the digital realm. Some refer to us as engineers while some call us magicians but we like to go by “zookeepers.”
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="mission">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 scrollpoint sp-effect4">
+                    <img src="img/animals.png" class="img-responsive img-center" alt="">
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="about">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-push-2 clearfix">
+                    <div class="section-heading scrollpoint sp-effect3">
+                      <h1>what we do</span>
+                      </h1>
+                      <h4>
+                        Zoo House specializes in making awesome products. It’s pretty simple and we want to keep it that way. We help local restaurants launch beautiful websites, hardworking professionals create industry leading portfolios, and visionaries build breathtaking apps but ultimately we strive to turn dreams into reality. Let’s change the world together.
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="testimonials">
+              <div class="container" style="height:250px">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div id="testimonials-carousel" class="carousel slide scrollpoint sp-effect3" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <p>After launching the new website with Zoo House, our food take-out business almost doubled. We constantly get complimented on how beautiful and easy to use our website is and we’re definitely happy about that.</p>
+                          <div class="row">
+                            <div class="col-md-4 col-md-push-5">
+                              <div class="author">
+                                <h5>Owner and Chef</h5>
+                                <p>southcitytakeout.com</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-md-12 scrollpoint sp-effect4">
-                        <img src="img/animals.png" class="img-responsive img-center" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-push-2 clearfix">
-                        <div class="section-heading scrollpoint sp-effect3">
-                            <h1>what we do</span>
-                            </h1>
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore reiciendis vel reprehenderit expedita cupiditate repellat debitis! Est qui quae consectetur temporibus a illum deleniti? Quae, adipisci praesentium quis omnis dignissimos!</h4>
+                        <div class="item">
+                          <p>A simple resume and a Linkedin profile is no longer enough. Whether you’re in the financial industry or in the arts, one needs to display their work in their way to get the upper hand and stand out. A personal website helped me land a ton of job offers. </p>
+                          <div class="row">
+                            <div class="col-md-4 col-md-push-5">
+                              <div class="author">
+                                <h5>Billy Zhu</h5>
+                                <p>Finance Professional</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonials">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="testimonials-carousel" class="carousel slide scrollpoint sp-effect3" data-ride="carousel">
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, cumque reprehenderit blanditiis consequatur magnam ipsa vitae deserunt odio nesciunt enim sint tempore magni sit alias illo quisquam unde. Laboriosam, minima!</p>
-                                    <div class="row">
-                                        <div class="col-md-4 col-md-push-5">
-                                            <div class="author">
-                                                <h5>Name dot name</h5>
-                                                <p>Senior UI Developer - ScoopThemes</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, cumque reprehenderit blanditiis consequatur magnam ipsa vitae deserunt odio nesciunt enim sint tempore magni sit alias illo quisquam unde. Laboriosam.</p>
-                                    <div class="row">
-                                        <div class="col-md-4 col-md-push-5">
-                                            <div class="author">
-                                                <h5>Name dot name</h5>
-                                                <p>Senior UI Developer - ScoopThemes</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="item">
+                          <p>They are a smart, motivated, and innovative team and have proven time and time again that they produce amazing products.</p>
+                          <div class="row">
+                            <div class="col-md-4 col-md-push-5">
+                              <div class="author">
+                                <h5>Client</h5>
+                                <p>Happy Camper</p>
+                              </div>
                             </div>
-
-                            <!-- Controls -->
-                            <a class="left carousel-control" href="#testimonials-carousel" data-slide="prev">
-                                <i class="fa fa-angle-left fa-3x"></i>
-                            </a>
-                            <a class="right carousel-control" href="#testimonials-carousel" data-slide="next">
-                                <i class="fa fa-angle-right fa-3x"></i>
-                            </a>
+                          </div>
                         </div>
-
+                      </div>
+                      <!-- Controls -->
+                      <a class="left carousel-control" href="#testimonials-carousel" data-slide="prev">
+                      <i class="fa fa-angle-left fa-3x"></i>
+                      </a>
+                      <a class="right carousel-control" href="#testimonials-carousel" data-slide="next">
+                      <i class="fa fa-angle-right fa-3x"></i>
+                      </a>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
+              </div>
+            </section>
+            <section id="contact">
+              <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-push-2 clearfix">
-                        <div class="section-heading scrollpoint sp-effect3">
-                            <h1>.get in touch</h1>
-                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore reiciendis vel reprehenderit expedita cupiditate repellat debitis!</h4>
-                        </div>
+                  <div class="col-md-8 col-md-push-2 clearfix">
+                    <div class="section-heading scrollpoint sp-effect3">
+                      <h1>Let's have a chat</h1>
+                      <h4>We promise we don't bite</h4>
                     </div>
+                  </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="contact-details">
-                            <div class="detail">
-                                <h4>bond
-                                    <span class="brandy">y</span>web agency.</h4>
-                                <p>4, Some street, California, USA</p>
-                            </div>
-                            <div class="detail">
-                                <h4>call us</h4>
-                                <p>+1 234 567890</p>
-                            </div>
-                            <div class="detail">
-                                <h4>email us</h4>
-                                <p>support@Bondy.com</p>
-                            </div>
-                            <div class="detail">
-                                <ul class="clearfix">
-                                    <li><a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-youtube fa-2x"></i></a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                  <div class="col-md-6">
+                    <div class="contact-details">
+                      <div class="detail">
+                        <h4>
+                          Zoo House HQ
+                        </h4>
+                        <p>Waterloo, ON, Canada</p>
+                      </div>
+                      <div class="detail">
+                        <h4>call us</h4>
+                        <p>+1 234 567890</p>
+                      </div>
+                      <div class="detail">
+                        <h4>email us</h4>
+                        <p>support@Bondy.com</p>
+                      </div>
+                      <div class="detail">
+                        <ul class="clearfix">
+                          <li><a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+                          </li>
+                          <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                          </li>
+                          <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                          </li>
+                          <li><a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+                          </li>
+                          <li><a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-                    <div class="col-md-6">
-                        <form>
-                            <div class="form-group has-feedback left">
-                                <input type="text" class="form-control" placeholder="NAME">
-                                <i class="fa fa-user form-control-feedback"></i>
-                            </div>
-                            <div class="form-group has-feedback left">
-                                <input type="email" class="form-control" placeholder="Email">
-                                <i class="fa fa-envelope-o form-control-feedback"></i>
-                            </div>
-                            <div class="form-group has-feedback left">
-                                <textarea class="form-control" rows="7" placeholder="MESSAGE"></textarea>
-                                <i class="fa fa-pencil-square-o form-control-feedback"></i>
-                            </div>
-                            <button class="btn btn-primary btn-lg pull-right" type="submit">SUBMIT</button>
-
-                        </form>
-                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <form>
+                      <div class="form-group has-feedback left">
+                        <input type="text" class="form-control" placeholder="NAME">
+                        <i class="fa fa-user form-control-feedback"></i>
+                      </div>
+                      <div class="form-group has-feedback left">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <i class="fa fa-envelope-o form-control-feedback"></i>
+                      </div>
+                      <div class="form-group has-feedback left">
+                        <textarea class="form-control" rows="7" placeholder="MESSAGE"></textarea>
+                        <i class="fa fa-pencil-square-o form-control-feedback"></i>
+                      </div>
+                      <button class="btn btn-primary btn-lg pull-right" type="submit">SUBMIT</button>
+                    </form>
+                  </div>
                 </div>
-            </div>
-        </section>
-
-        <footer id="site-footer">
-            <div class="container">
+              </div>
+            </section>
+            <footer id="site-footer">
+              <div class="container">
                 <div class="row">
-                    <h4>&copy 2016 Zoo House</h4>
-                    <a href="#" class="scroll-top">
-                        <i class="fa fa-angle-up fa-3x" style="color:white" aria-hidden="true"></i>
-                    </a>
+                  <h4>&copy 2016 Zoo House</h4>
+                  <a href="#" class="scroll-top">
+                  <i class="fa fa-angle-up fa-3x" style="color:white" aria-hidden="true"></i>
+                  </a>
                 </div>
-            </div>
-        </footer>
-    </div>
-    <!--/wrap-->
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/stellar.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/jquery.easypiechart.min.js"></script>
-
-    <!-- jQuery REVOLUTION Slider  -->
-    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
-    <script src="js/waypoints.min.js"></script>
-
-    <script src="js/script.js"></script>
-
-    <script>
-    $(document).ready(function() {
-        appMaster.preLoader();
-        appMaster.smoothScroll();
-        appMaster.animateScript();
-        appMaster.navSpy();
-        appMaster.revSlider();
-        appMaster.stellar();
-        appMaster.skillsChart();
-        appMaster.isoTop();
-        appMaster.canvasHack();
-    });
-    </script>
-
-</body>
-
-</html>
+              </div>
+            </footer>
+          </div>
+          <!--/wrap-->
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/stellar.js"></script>
+          <script src="js/isotope.pkgd.min.js"></script>
+          <script src="js/jquery.easypiechart.min.js"></script>
+          <!-- jQuery REVOLUTION Slider  -->
+          <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+          <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+          <script src="js/waypoints.min.js"></script>
+          <script src="js/script.js"></script>
+          <script>
+            $(document).ready(function() {
+                appMaster.preLoader();
+                appMaster.smoothScroll();
+                appMaster.animateScript();
+                appMaster.navSpy();
+                appMaster.revSlider();
+                appMaster.stellar();
+                appMaster.skillsChart();
+                appMaster.isoTop();
+                appMaster.canvasHack();
+            });
+          </script>
+        </body>
+      </html>
