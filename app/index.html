@@ -45,17 +45,21 @@
             </div>
           </div>
           <div class="go-down">
-            <a href="#whoWeAre">
+            <a href="#mission">
             <i class="fa fa-angle-down fa-3x"></i>
             </a>
           </div>
           <!-- Wrap all page content here -->
           <div id="wrap" class="home">
             <header class="masthead">
-              <div class="video-background" style="margin-bottom:-5px">
-                <video autoplay style="width:100%" onclick="this.paused ? this.play() : this.pause();">
+              <div class="video-background" style="position: relative;">
+                <video autoplay style="height: auto;vertical-align: middle;width: 100%;" onclick="this.paused ? this.play() : this.pause();" onloadstart="this.volume=0;">
                   <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" />
                 </video>
+                <div class="video-overlay">
+                  <img src="img/banner_logo.png" width="50%"/>
+                  <h2>We build awesome products with awesome people.</h2>
+                </div>
               </div>
               <!-- Fixed navbar -->
               <div class="navbar navbar-static-top" id="nav" role="navigation">
@@ -72,7 +76,7 @@
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                      <li class="active"><a href="#mission">mission</a></li>
+                      <li class="active"><a href="#how-we-roll">How We Roll</a></li>
                       <li><a href="#about">what we do</a></li>
                       <li><a href="#contact">contact</a></li>
                       <li class="social-nav visible-lg">
@@ -89,17 +93,24 @@
               </div>
               <!--/.navbar -->
             </header>
-            <section id="mission">
-              <div class="container">
+            <section id="how-we-roll">
+              <div class="container" style="height:250px">
                 <div class="row">
                   <div class="col-md-8 col-md-push-2 clearfix">
                     <div class="section-heading scrollpoint sp-effect3">
-                      <h1>
-                        Welcome to Zoo House
+                      <h1>How we roll.</span>
                       </h1>
-                      <h4>We build awesome products with awesome people.</h4>
+                      <h4>
+                        We are a team of dedicated makers who are passionate about bringing elegant design and innovative technologies to the world. Our mission is simple. We believe that everyone from a local shop owner to an individual with a disruptive idea should get a fair shake in the digital realm. Some refer to us as engineers while some call us magicians but we like to go by “zookeepers.”
+                      </h4>
                     </div>
                   </div>
+                </div>
+              </div>
+            </section>
+            <section id="mission">
+              <div class="container">
+                <div class="row">
                   <div class="col-md-12 scrollpoint sp-effect4">
                     <img src="img/animals.png" class="img-responsive img-center" alt="">
                   </div>
@@ -115,21 +126,6 @@
                       </h1>
                       <h4>
                         Zoo House specializes in making awesome products. It’s pretty simple and we want to keep it that way. We help local restaurants launch beautiful websites, hardworking professionals create industry leading portfolios, and visionaries build breathtaking apps but ultimately we strive to turn dreams into reality. Let’s change the world together.
-                      </h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section id="about">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-8 col-md-push-2 clearfix">
-                    <div class="section-heading scrollpoint sp-effect3">
-                      <h1>How we roll.</span>
-                      </h1>
-                      <h4>
-                        We are a team of dedicated makers who are passionate about bringing elegant design and innovative technologies to the world. Our mission is simple. We believe that everyone from a local shop owner to an individual with a disruptive idea should get a fair shake in the digital realm. Some refer to us as engineers while some call us magicians but we like to go by “zookeepers.”
                       </h4>
                     </div>
                   </div>
