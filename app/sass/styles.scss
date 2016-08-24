@@ -317,10 +317,9 @@ section {
 		}
 	}
 	&#how-we-roll {
-		padding-bottom: 0;
+		padding-bottom: 1em;
 	}
 	&#about {
-		padding-top: 0;
 		img {
 			margin: 15px auto;
 		}
@@ -370,6 +369,7 @@ section {
 		}
 	}
 	&#contact {
+		padding-top: 10vh;
 		padding-bottom: 2em;
 		.contact-details {
 			.detail {
