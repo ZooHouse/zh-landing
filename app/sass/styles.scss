@@ -308,25 +308,28 @@ header {
 	}
 }
 section {
+	.scrollpoint {
+		padding-top: 20vh;
+	}
 	&#mission {
-		padding: 6vh 0;
 		.media .media-body h4 {
 			font-weight: bold;
 		}
+		.scrollpoint {
+			padding: 0;
+		}
 	}
 	&#how-we-roll {
-		padding: 30vh 0;
-		height: 100vh;
+		padding-bottom: 20vh;
 	}
 	&#about {
-		padding: 30vh 0;
-		height: 100vh;
+		padding-bottom: 20vh;
 		img {
 			margin: 15px auto;
 		}
 	}
 	&#testimonials {
-		padding: 20vh 0;
+		padding-bottom: 20vh;
 		background: $brand-primary;
 		#testimonials-carousel {
 			margin: 30px 0;
@@ -370,7 +373,7 @@ section {
 		}
 	}
 	&#contact {
-		padding: 40px 0;
+		padding-bottom: 2em;
 		.contact-details {
 			.detail {
 				margin: 25px auto;
