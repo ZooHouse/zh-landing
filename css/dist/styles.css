@@ -187,25 +187,23 @@ header.masthead h3 {
   color: #222222;
 }
 
+section {
+  padding: 15vh 0;
+}
 section#mission {
-  padding: 6vh 0;
+  padding: 0;
 }
 section#mission .media .media-body h4 {
   font-weight: bold;
 }
 section#how-we-roll {
-  padding: 30vh 0;
-  height: 100vh;
-}
-section#about {
-  padding: 30vh 0;
-  height: 100vh;
+  padding-bottom: 1em;
 }
 section#about img {
   margin: 15px auto;
 }
 section#testimonials {
-  padding: 20vh 0;
+  padding: 0;
   background: #20bbfc;
 }
 section#testimonials #testimonials-carousel {
@@ -249,7 +247,8 @@ section#testimonials #testimonials-carousel .carousel-control {
   text-shadow: none;
 }
 section#contact {
-  padding: 40px 0;
+  padding-top: 10vh;
+  padding-bottom: 2em;
 }
 section#contact .contact-details .detail {
   margin: 25px auto;
