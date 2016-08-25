@@ -191,18 +191,17 @@ section {
   padding: 15vh 0;
 }
 section#mission {
-  padding: 0;
+  background: #20bbfc;
+  padding: 75px 0;
 }
 section#mission .media .media-body h4 {
   font-weight: bold;
-}
-section#how-we-roll {
-  padding-bottom: 1em;
 }
 section#about img {
   margin: 15px auto;
 }
 section#testimonials {
+  height: 170px;
   padding: 0;
   background: #20bbfc;
 }
@@ -210,6 +209,7 @@ section#testimonials #testimonials-carousel {
   margin: 30px 0;
 }
 section#testimonials #testimonials-carousel .item {
+  height: 170px;
   padding: 0 50px;
 }
 section#testimonials #testimonials-carousel .item p {
@@ -245,10 +245,6 @@ section#testimonials #testimonials-carousel .carousel-control {
   color: #FFFFFF;
   opacity: 1;
   text-shadow: none;
-}
-section#contact {
-  padding-top: 10vh;
-  padding-bottom: 2em;
 }
 section#contact .contact-details .detail {
   margin: 25px auto;
