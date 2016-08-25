@@ -365,6 +365,12 @@ section {
 				color: $white-color;
 				opacity: 1;
 				text-shadow: none;
+
+				i {
+					position: absolute;
+					top: 50%;
+					transform: perspective(1px) translateY(-50%);
+				}
 			}
 		}
 	}
