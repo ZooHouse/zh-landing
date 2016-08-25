@@ -402,8 +402,11 @@ footer#site-footer h4,
 footer#site-footer h5 {
   text-transform: uppercase;
 }
-footer#site-footer a img.top {
-  margin: 20px 0;
+footer#site-footer a i {
+  color: white;
+}
+footer#site-footer a i:hover {
+  color: #027fb4;
 }
 
 .media {
