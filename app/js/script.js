@@ -154,7 +154,7 @@ var appMaster = {
       if (items.length) {
           function normalizeHeights() {
               items.each(function() { //add heights to array
-                  heights.push($(this).height());
+                  heights.push($(this).find('.testimonial-wrapper').height());
               });
               tallest = Math.max.apply(null, heights); //cache largest value
               items.each(function() {
