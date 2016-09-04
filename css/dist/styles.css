@@ -101,6 +101,8 @@ header.masthead h3 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
 }
 
 #wrap {
