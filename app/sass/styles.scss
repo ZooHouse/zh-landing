@@ -361,6 +361,27 @@ section {
 					}
 				}
 			}
+			.slick-dots {
+				li {
+					width: 10px;
+					height: 10px;
+					button {
+						width: 10px;
+						height: 10px;
+						background: $white-color;
+						opacity: 0.25;
+						border-radius: 50%;
+						&:before {
+							display: none;
+						}
+					}
+					&.slick-active {
+						button {
+							opacity: 1;
+						}
+					}
+				}
+			}
 		}
 	}
 	&#contact {
