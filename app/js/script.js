@@ -103,6 +103,15 @@ var appMaster = {
         });
     },
 
+    slickifyCarousel: function(){
+        $('#testimonials-carousel').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            speed: 500,
+            dots: true
+        });
+    },
+
     isoTop: function(){
         var $container = $('#container');
         // init

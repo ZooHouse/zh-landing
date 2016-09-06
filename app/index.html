@@ -21,6 +21,8 @@
           <link rel="stylesheet" href="css/animate.css">
           <link rel="stylesheet" href="css/font-awesome.min.css">
           <link rel="stylesheet" href="css/jquery.easy-pie-chart.css">
+          <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+          <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
           <link rel="stylesheet" href="css/dist/styles.css" title="mainStyle">
           <!-- REVOLUTION BANNER CSS SETTINGS -->
           <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
@@ -137,50 +139,40 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-12">
-                    <div id="testimonials-carousel" class="carousel slide scrollpoint sp-effect3" data-ride="carousel">
-                      <!-- Wrapper for slides -->
-                      <div class="carousel-inner">
-                        <div class="item active">
-                          <p>After launching the new website with Zoo House, our food take-out business almost doubled. We constantly get complimented on how beautiful and easy to use our website is and we’re definitely happy about that.</p>
-                          <div class="row">
-                            <div class="col-md-4 col-md-push-5">
-                              <div class="author">
-                                <h5>Owner and Chef</h5>
-                                <p>southcitytakeout.com</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <p>A simple resume and a Linkedin profile is no longer enough. Whether you’re in the financial industry or in the arts, one needs to display their work in their way to get the upper hand and stand out. A personal website helped me land a ton of job offers. </p>
-                          <div class="row">
-                            <div class="col-md-4 col-md-push-5">
-                              <div class="author">
-                                <h5>Billy Zhu</h5>
-                                <p>Finance Professional</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="item">
-                          <p>They are a smart, motivated, and innovative team and have proven time and time again that they produce amazing products.</p>
-                          <div class="row">
-                            <div class="col-md-4 col-md-push-5">
-                              <div class="author">
-                                <h5>Client</h5>
-                                <p>Happy Camper</p>
-                              </div>
+                    <div id="testimonials-carousel" class="scrollpoint sp-effect3">
+                      <div class="item">
+                        <p>After launching the new website with Zoo House, our food take-out business almost doubled. We constantly get complimented on how beautiful and easy to use our website is and we’re definitely happy about that.</p>
+                        <div class="row">
+                          <div class="col-md-4 col-md-push-5">
+                            <div class="author">
+                              <h5>Owner and Chef</h5>
+                              <p>southcitytakeout.com</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <!-- Controls -->
-                      <a class="left carousel-control" href="#testimonials-carousel" data-slide="prev">
-                      <i class="fa fa-angle-left fa-3x"></i>
-                      </a>
-                      <a class="right carousel-control" href="#testimonials-carousel" data-slide="next">
-                      <i class="fa fa-angle-right fa-3x"></i>
-                      </a>
+                      <div class="item">
+                        <p>A simple resume and a Linkedin profile is no longer enough. Whether you’re in the financial industry or in the arts, one needs to display their work in their way to get the upper hand and stand out. A personal website helped me land a ton of job offers. </p>
+                        <div class="row">
+                          <div class="col-md-4 col-md-push-5">
+                            <div class="author">
+                              <h5>Billy Zhu</h5>
+                              <p>Finance Professional</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <p>They are a smart, motivated, and innovative team and have proven time and time again that they produce amazing products.</p>
+                        <div class="row">
+                          <div class="col-md-4 col-md-push-5">
+                            <div class="author">
+                              <h5>Client</h5>
+                              <p>Happy Camper</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -263,6 +255,7 @@
           <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
           <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
           <script src="js/waypoints.min.js"></script>
+          <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
           <script src="js/script.js"></script>
           <script>
             $(document).ready(function() {
@@ -273,6 +266,7 @@
                 appMaster.revSlider();
                 appMaster.stellar();
                 appMaster.skillsChart();
+                appMaster.slickifyCarousel();
                 appMaster.isoTop();
                 appMaster.canvasHack();
             });

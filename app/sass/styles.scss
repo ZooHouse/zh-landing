@@ -327,13 +327,11 @@ section {
 		}
 	}
 	&#testimonials {
-		height: 170px;
 		padding: 0;
 		background: $brand-primary;
 		#testimonials-carousel {
 			margin: 30px 0;
 			.item {
-				height: 170px;
 				padding: 0 50px;
 				p {
 					padding: 0 50px;
@@ -362,13 +360,6 @@ section {
 						color: $white-color;
 					}
 				}
-			}
-			.carousel-control {
-				background: none;
-				width: 30px;
-				color: $white-color;
-				opacity: 1;
-				text-shadow: none;
 			}
 		}
 	}
