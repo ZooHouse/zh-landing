@@ -6,7 +6,7 @@
 
 ## deploying
 
-```grunt git_deploy```
+```npm run deploy```
 
 ## Resources
 
