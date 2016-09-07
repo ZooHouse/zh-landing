@@ -241,9 +241,11 @@ section#testimonials #testimonials-carousel .item .author:before {
 }
 section#testimonials #testimonials-carousel .slick-prev {
   left: 0px;
+  z-index: 2;
 }
 section#testimonials #testimonials-carousel .slick-next {
   right: 0px;
+  z-index: 2;
 }
 section#testimonials #testimonials-carousel .slick-prev,
 section#testimonials #testimonials-carousel .slick-next {
