@@ -657,13 +657,14 @@ footer#site-footer {
 	h3 {
 		text-transform: uppercase;
 		font-weight: bold;
+		margin-bottom: 40px;
 		span {
 			color: $brand-primary;
 		}
 	}
 	h4 {
 		color: $gray;
-		line-height: 22px;
+		line-height: 1.5em;
 	}
 	i {
 		color: lighten($gray-light, 25%);
