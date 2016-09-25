@@ -202,79 +202,24 @@ section#mission .media .media-body h4 {
 section#about img {
   margin: 15px auto;
 }
-section#testimonials {
-  padding: 0;
-  background: #20bbfc;
+section#pillars {
+  background: url("../../img/laptop_keyboard.png");
+  background-size: cover;
 }
-section#testimonials #testimonials-carousel {
-  margin: 30px 0;
+section#pillars .media {
+  margin-top: 20px;
 }
-section#testimonials #testimonials-carousel .item {
-  padding: 0 50px;
+section#pillars .media .media-body .media-heading {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 32px;
+  color: white;
 }
-section#testimonials #testimonials-carousel .item p {
-  padding: 0 50px;
-  text-align: center;
-  color: #FFFFFF;
-  font-size: 16px;
-}
-section#testimonials #testimonials-carousel .item .author {
-  position: relative;
-  color: #FFFFFF;
-}
-section#testimonials #testimonials-carousel .item .author h5 {
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin-bottom: 1px;
-}
-section#testimonials #testimonials-carousel .item .author p {
-  text-align: left;
-  padding: 0;
-  font-size: 14px;
-}
-section#testimonials #testimonials-carousel .item .author:before {
-  content: "____";
-  position: absolute;
-  top: -10px;
-  left: -40px;
-  color: #FFFFFF;
-}
-section#testimonials #testimonials-carousel .slick-prev {
-  left: 0px;
-  z-index: 2;
-}
-section#testimonials #testimonials-carousel .slick-next {
-  right: 0px;
-  z-index: 2;
-}
-section#testimonials #testimonials-carousel .slick-prev,
-section#testimonials #testimonials-carousel .slick-next {
-  width: 40px;
-  height: 40px;
-}
-section#testimonials #testimonials-carousel .slick-prev:before,
-section#testimonials #testimonials-carousel .slick-next:before {
-  font-size: 40px;
-}
-section#testimonials #testimonials-carousel .slick-dots {
-  bottom: -16px;
-}
-section#testimonials #testimonials-carousel .slick-dots li {
-  width: 10px;
-  height: 10px;
-}
-section#testimonials #testimonials-carousel .slick-dots li button {
-  width: 10px;
-  height: 10px;
-  background: #FFFFFF;
-  opacity: 0.25;
-  border-radius: 50%;
-}
-section#testimonials #testimonials-carousel .slick-dots li button:before {
-  display: none;
-}
-section#testimonials #testimonials-carousel .slick-dots li.slick-active button {
-  opacity: 1;
+section#pillars .media .media-body p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-top: 20px;
 }
 section#contact .contact-details .detail {
   margin: 25px auto;
