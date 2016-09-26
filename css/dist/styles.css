@@ -389,16 +389,16 @@ footer#site-footer a i:hover {
   text-align: left;
   overflow: hidden;
 }
-.media a {
+.media a, .media span {
   text-decoration: none;
 }
-.media a.pull-left {
+.media a.pull-left, .media span.pull-left {
   margin-right: 25px;
 }
-.media a.pull-right {
+.media a.pull-right, .media span.pull-right {
   margin-left: 25px;
 }
-.media a .media-object {
+.media a .media-object, .media span .media-object {
   background: #20bbfc;
   color: #FFFFFF;
   border: 4px solid #20bbfc;
