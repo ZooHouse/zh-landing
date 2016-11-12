@@ -253,6 +253,38 @@ section#contact .contact-details .detail ul li a i {
 section#contact .contact-details .detail ul li a:hover {
   color: #20bbfc;
 }
+section#career-header {
+  background: url("../../img/laptop_keyboard.png");
+  background-size: cover;
+  color: white;
+}
+section#career-header h1 {
+  background: #20bbfc;
+  padding: 15px;
+  border-style: solid;
+  border-color: white;
+  border-width: 10px;
+}
+section#careers {
+  background: #20bbfc;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+section#careers h2 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+section#careers h3 {
+  text-align: center;
+}
+section#careers p {
+  text-align: center;
+  font-size: 1.3em;
+}
+section#careers .career-box {
+  padding: 30px;
+}
 section .side-block {
   margin-top: 25px;
 }

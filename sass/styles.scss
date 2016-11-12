@@ -380,6 +380,38 @@ section {
 			}
 		}
 	}
+	&#career-header {
+		background: url('../../img/laptop_keyboard.png');
+		background-size: cover;
+		color: white;
+		h1 {
+			background: $brand-primary;
+			padding: 15px;
+			border-style: solid;
+			border-color: white;
+			border-width: 10px;
+		}
+	}
+	&#careers {
+		background: $brand-primary;
+		color: white;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		h2 {
+			padding-bottom: 30px;
+			text-align: center;
+		}
+		h3 {
+			text-align: center;
+		}
+		p {
+			text-align: center;
+			font-size: 1.3em;
+		}
+		.career-box {
+			padding: 30px;
+		}
+	}
 	.side-block {
 		margin-top: 25px;
 		&.search {
