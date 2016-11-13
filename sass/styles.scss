@@ -230,6 +230,7 @@ header {
 
 #wrap {
 	padding-top: 70px;
+	overflow-x: hidden;
 	&.home {
 		padding: 0;
 	}

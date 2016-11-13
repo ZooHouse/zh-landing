@@ -107,6 +107,7 @@ header.masthead h3 {
 
 #wrap {
   padding-top: 70px;
+  overflow-x: hidden;
 }
 #wrap.home {
   padding: 0;
