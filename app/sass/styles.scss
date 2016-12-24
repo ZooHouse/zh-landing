@@ -160,6 +160,7 @@ header {
 	background: $gray-darker;
 	color: $white-color;
 	&.masthead {
+		max-height: 100vh;
 		.bannercontainer {
 			width: 100%;
 			position: relative;
@@ -820,7 +821,7 @@ a {
 }
 // responsive video
 .video-background {
-  max-height: 100vh;
+  max-height: calc(100vh - 70px);
   width:100%;
   overflow: hidden;
 }
