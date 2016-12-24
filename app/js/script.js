@@ -161,5 +161,8 @@ var appMaster = {
 $(document).ready(function() {
 
     appMaster.scollToTop();
+    $('.nav a').on('click', function() {
+        $('.navbar-collapse').collapse('hide');
+    });
 
 });
