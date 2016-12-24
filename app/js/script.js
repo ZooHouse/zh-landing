@@ -24,7 +24,7 @@ var appMaster = {
         /* affix the navbar after scroll below header */
         $('#nav.navbar-static-top').affix({
             offset: {
-                top: $(window).height()
+                top: $(window).height() - 70
             }
         });
 
