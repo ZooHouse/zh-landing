@@ -17,6 +17,7 @@
     "grunt-newer": "~0.5.4"
   },
   "scripts": {
+    "start": "grunt",
     "deploy": "rm -rf tmp && grunt git_deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
