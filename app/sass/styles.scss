@@ -630,9 +630,10 @@ footer#site-footer {
 	}
 }
 .go-down {
-	position: absolute;
 	bottom: 20px;
-	right: 49.2%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 	z-index: 999;
 	a {
 		color: $white-color;
