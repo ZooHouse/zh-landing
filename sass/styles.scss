@@ -160,6 +160,7 @@ header {
 	background: $gray-darker;
 	color: $white-color;
 	&.masthead {
+		height: 100vh;
 		.bannercontainer {
 			width: 100%;
 			position: relative;
@@ -248,7 +249,6 @@ header {
 		position: fixed;
 		top: 0;
 		z-index: 999;
-		@include transition;
 	}
 	li {
 		a:hover, a:focus {
@@ -259,6 +259,17 @@ header {
 		img {
 			margin-top: 0;
 		}
+
+		.logo {
+			display: inline-block;
+			margin-bottom: 6px;
+		}
+
+		.text {
+			margin-left: 6px;
+			display: inline-block;
+		}
+
 		padding: 0;
 		height: 69px;
 		line-height: 69px;
@@ -820,9 +831,23 @@ a {
 }
 // responsive video
 .video-background {
-  max-height: 100vh;
-  width:100%;
+  height: calc(100vh - 70px);
+  width: 100%;
   overflow: hidden;
+
+  video {
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+.image-background {
+	display: none;
 }
 .flex-video {
 	position: relative;
@@ -873,6 +898,22 @@ canvas {
 }
 // media queries
 @media (max-width: 767px) {
+	.video-background {
+		height: 100vh;
+
+		video {
+			display: none;
+		}
+
+		.image-background {
+			display: block;
+			height: 100vh;
+			background-size: cover;
+			background-image: url("/img/lol.jpg");
+			background-repeat: no-repeat;
+		}
+	}
+
 	#nav .navbar-nav li a {
 		padding-top: 8px;
 		padding-bottom: 8px;

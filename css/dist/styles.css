@@ -35,6 +35,9 @@ header {
   background: #222222;
   color: #FFFFFF;
 }
+header.masthead {
+  height: 100vh;
+}
 header.masthead .bannercontainer {
   width: 100%;
   position: relative;
@@ -130,10 +133,6 @@ header.masthead h3 {
   position: fixed;
   top: 0;
   z-index: 999;
-  -webkit-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
 }
 #nav li a:hover, #nav li a:focus {
   background-color: transparent;
@@ -145,6 +144,14 @@ header.masthead h3 {
 }
 #nav .navbar-brand img {
   margin-top: 0;
+}
+#nav .navbar-brand .logo {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+#nav .navbar-brand .text {
+  margin-left: 6px;
+  display: inline-block;
 }
 #nav.navbar-fixed-top {
   position: fixed;
@@ -746,9 +753,23 @@ a:hover {
 }
 
 .video-background {
-  max-height: 100vh;
+  height: calc(100vh - 70px);
   width: 100%;
   overflow: hidden;
+}
+.video-background video {
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-background {
+  display: none;
 }
 
 .flex-video {
@@ -808,6 +829,20 @@ canvas {
 }
 
 @media (max-width: 767px) {
+  .video-background {
+    height: 100vh;
+  }
+  .video-background video {
+    display: none;
+  }
+  .video-background .image-background {
+    display: block;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("/img/lol.jpg");
+    background-repeat: no-repeat;
+  }
+
   #nav .navbar-nav li a {
     padding-top: 8px;
     padding-bottom: 8px;
