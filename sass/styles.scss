@@ -160,7 +160,9 @@ header {
 	background: $gray-darker;
 	color: $white-color;
 	&.masthead {
-		height: 100vh;
+		.fill-height {
+			height: 100vh;
+		}
 		.bannercontainer {
 			width: 100%;
 			position: relative;
