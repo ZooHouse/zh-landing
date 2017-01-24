@@ -341,7 +341,7 @@ section {
 		}
 	}
 	&#pillars {
-		background: url('../../img/laptop_keyboard.png');
+		background: url('../../img/laptop_keyboard.jpg');
 		background-size: cover;
 		.media {
 			margin-top: 20px;
@@ -395,7 +395,7 @@ section {
 		}
 	}
 	&#career-header {
-		background: url('../../img/laptop_keyboard.png');
+		background: url('../../img/laptop_keyboard.jpg');
 		background-size: cover;
 		color: white;
 		h1 {
@@ -912,8 +912,11 @@ canvas {
 			display: block;
 			height: 100vh;
 			background-size: cover;
-			background-image: url("/img/lol.jpg");
+			background-image: url("/img/ZH_MobileLandingPic.jpg");
 			background-repeat: no-repeat;
+		}
+
+		.overlay-brand {
 		}
 	}
 
