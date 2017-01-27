@@ -1,3 +1,4 @@
+@import "bourbon/bourbon";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400,600,700);
 @font-face {
 	font-family: 'Avenir Heavy';
@@ -832,6 +833,13 @@ a {
 		opacity: 1 \0;
 	}
 }
+.image-background {
+	display: none;
+	height: 100vh;
+	width: 100%;
+	@include background-image(url("/img/landing.jpg"));
+	background-size: cover;
+}
 // responsive video
 .video-background {
   height: calc(100vh - 70px);
@@ -932,6 +940,12 @@ canvas {
 	}
 	header {
 		&.masthead {
+			.video-background>video {
+				display: none;
+			}
+			.image-background {
+				display: block;
+			}
 			h1 {
 				font-size: 30px;
 			}
