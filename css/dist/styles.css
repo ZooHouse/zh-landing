@@ -229,6 +229,9 @@ section#pillars .media .media-body p {
   line-height: 1.5em;
   margin-top: 20px;
 }
+section#pillars .media .media-body a:hover {
+  text-decoration: underline;
+}
 section#contact .contact-details .detail {
   margin: 25px auto;
 }
