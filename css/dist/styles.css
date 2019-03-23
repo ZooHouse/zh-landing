@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400,600,700);
 @font-face {
   font-family: 'Avenir Heavy';
   src: url("../../fonts/avenir-heavy-webfont.eot");
@@ -94,7 +94,7 @@ header.masthead h3 {
 }
 
 .video-overlay {
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   position: absolute;
   top: 0;
   right: 0;
@@ -135,7 +135,7 @@ header.masthead h3 {
   z-index: 999;
 }
 #nav li a:hover, #nav li a:focus {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 #nav .navbar-brand {
   padding: 0;
